@@ -57,9 +57,28 @@ git commit -o
 
 用于将已经通过git add 添加到索引区的改动创建一个新的提交
 
+Git 日志
+
+```sh
+git log
+```
 
 
 
+给本地仓库添加远程仓库
 
+```sh
+git remote add origin git@github.com:tokmz/go_study.git
 
+# 验证 
+git remote
+
+# 生成密钥
+ssh-keygen -t rsa -C "aikzy@qq.com"
+
+# 验证是否和github可以连接
+ssh -T git@github.com
+# 进行推送
+git push -u origin main
+```
 
